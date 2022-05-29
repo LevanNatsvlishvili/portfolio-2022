@@ -1,0 +1,111 @@
+[class*='ring'],
+.center {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+[class*='ring'] {
+  animation: glow 3s linear infinite;
+  border-radius: 50%;
+  border: 0.6em solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.3);
+  height: 50%;
+  transition: 1s transform ease-in-out;
+  width: 50%;
+}
+[class*='ring'] div {
+  animation: rotate 2s linear infinite;
+  border-radius: 50%;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.ring1 {
+  transform: rotate(120deg) scale(0.333, 1);
+  animation: rotate1;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+}
+
+.ring2 {
+  transform: rotate(240deg) scale(0.333, 1);
+  animation: rotate2;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+}
+
+.ring3 {
+  transform: rotate(360deg) scale(0.333, 1);
+  animation: rotate3;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+}
+
+.center {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  height: 1em;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.3);
+  transition: 1s transform ease-in-out;
+  width: 1em;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(120deg) scale(0.333, 1);
+  }
+  20% {
+    transform: rotate(0deg) scale(0.8, 0.8) perspective(600px) rotateX(60deg);
+  }
+  35% {
+    transform: rotate(0deg) scale(0.8, 0.8) perspective(600px) rotateX(60deg);
+  }
+  60% {
+    transform: rotate(120deg) scale(0.333, 1);
+  }
+  100% {
+    transform: rotate(120deg) scale(0.333, 1);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(240deg) scale(0.333, 1);
+  }
+  20% {
+    transform: rotate(0deg) scale(0.8, 0.8) perspective(600px) rotateX(60deg);
+  }
+  35% {
+    transform: rotate(0deg) scale(0.8, 0.8) perspective(600px) rotateX(60deg);
+  }
+  60% {
+    transform: rotate(240deg) scale(0.333, 1);
+  }
+  100% {
+    transform: rotate(240deg) scale(0.333, 1);
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotate(360deg) scale(0.333, 1);
+  }
+  20% {
+    transform: rotate(0deg) scale(0.8, 0.8) perspective(600px) rotateX(60deg);
+  }
+  35% {
+    transform: rotate(0deg) scale(0.8, 0.8) perspective(600px) rotateX(60deg);
+  }
+  60% {
+    transform: rotate(360deg) scale(0.333, 1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.333, 1);
+  }
+}

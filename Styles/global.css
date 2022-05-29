@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './reset.css';
+@import './fonts.css';
+@import './base.css';
+@import './animations.css';
+
+/* components */
+@import './components/button.css';
+@import './components/form.css';
+@import './components/navigation.css';

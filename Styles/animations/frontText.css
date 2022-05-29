@@ -1,0 +1,105 @@
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showDividerLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  position: relative;
+  width: 50%;
+  /* width: 90vmin; */
+}
+.animated-title > div {
+  overflow: hidden;
+  position: absolute;
+  width: 60%;
+}
+.animated-title > div div {
+  padding: 1.25vmin 0;
+  position: absolute;
+}
+.animated-title > div:first-child div {
+  padding: 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+
+.animated-title > .divider {
+  width: 60%;
+  border: 2.5px solid white;
+  top: 75%;
+  position: absolute;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.animated-title > div.text-top div {
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.animated-title > div.text-bottom div {
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.start-text-animation > .divider {
+  animation: showDividerLine 1.5s;
+  width: 60%;
+}
+
+.start-text-animation > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+.start-text-animation > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+@media (max-width: 1224px) {
+  .animated-title > div {
+    width: 100%;
+  }
+  .animated-title {
+    width: 100%;
+  }
+}

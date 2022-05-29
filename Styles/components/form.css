@@ -1,0 +1,160 @@
+.signup-form {
+  transition: 0.2s;
+
+  color: #fff;
+}
+.signup-form input,
+.signup-form textarea {
+  border: 1px solid #2c3d7a;
+  background: rgb(13 22 40 / 20%);
+  resize: none;
+  color: #91b3bc;
+}
+
+@-webkit-keyframes extend {
+  0% {
+    width: 100%;
+    border-radius: 100px;
+  }
+  10% {
+    width: 101%;
+    margin-left: -2px;
+  }
+  20% {
+    width: 100%;
+    margin-left: 0px;
+  }
+  100% {
+    width: 38px;
+    border-radius: 100px;
+  }
+}
+@keyframes extend {
+  0% {
+    width: 100%;
+    border-radius: 100px;
+  }
+  10% {
+    width: 101%;
+    margin-left: -2px;
+  }
+  20% {
+    width: 100%;
+    margin-left: 0px;
+  }
+  100% {
+    width: 38px;
+    border-radius: 100px;
+  }
+}
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    color: #fff;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    color: #fff;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input,
+button,
+submit {
+  border: none;
+}
+
+.signup-button {
+  height: 38px;
+}
+
+.signup-button button {
+  background-color: #fff;
+  border: 1px solid #2c3d7a;
+  height: 38px;
+  width: 100%;
+  transition: 3s;
+  position: absolute;
+  background: rgb(13 22 40 / 20%);
+}
+
+.signup-button button > span {
+  font-size: 16px;
+  color: #91b3bc;
+}
+
+.signup-button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.signup-button-clicked {
+  margin: auto;
+  -webkit-animation: extend 1s ease-in-out;
+  -ms-animation: extend 1s ease-in-out;
+  animation: extend 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.signup-button-clicked > span {
+  /*animation*/
+  -webkit-animation: disappear 1s ease-in-out;
+  -ms-animation: disappear 1s ease-in-out;
+  animation: disappear 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+}
+
+.signup-button-clicked > svg {
+  /*animation*/
+  -webkit-animation: appear 1s ease-in-out;
+  -ms-animation: appear 1s ease-in-out;
+  animation: appear 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+}

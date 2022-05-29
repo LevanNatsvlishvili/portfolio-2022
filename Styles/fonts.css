@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Firago';
+  src: url('./fonts/FiraSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'FiragoBold';
+  src: url('./fonts/FiraSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'FiragoMedium';
+  src: url('./fonts/FiraSans-Medium.ttf');
+}
+@font-face {
+  font-family: 'FiragoThin';
+  src: url('./fonts/FiraSans-Thin.ttf');
+}
+@font-face {
+  font-family: 'FiragoLight';
+  src: url('./fonts/FiraSans-Light.ttf');
+}
+
+.firago-bold {
+  font-family: FiragoBold;
+}
+.firago-thin {
+  font-family: FiragoThin;
+}
+.firago-light {
+  font-family: FiragoLight;
+}

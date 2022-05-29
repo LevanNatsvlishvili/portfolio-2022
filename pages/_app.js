@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import '../Styles/global.css';
+import Layout from 'Layout';
+import { StoreContextProvider } from 'Store/Context';
+// import RenderRoutes from 'Routing/Routing';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+    <StoreContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </StoreContextProvider>
+  );
 }
 
-export default MyApp
+export default App;

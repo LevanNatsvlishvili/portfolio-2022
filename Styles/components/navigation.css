@@ -1,0 +1,258 @@
+/* nav menu styles */
+.navbutton {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  cursor: pointer;
+}
+.navbutton::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  bottom: 0;
+}
+.navbutton::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  top: 0;
+}
+.navbutton-active::before {
+  bottom: 50% !important;
+  transform: rotate(-45deg) translate3d(0, 50%, 0) !important;
+}
+.navbutton-active::after {
+  top: 50% !important;
+  transform: rotate(45deg) translate3d(0, -50%, 0) !important;
+}
+
+.navmenu {
+  height: 100vh;
+  width: 100%;
+  transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.navmenu a {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.navmenu a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  /* background-image: linear-gradient(to right, #072142, #8c2b7a 32%, #ff4d5a); */
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navmenu a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navmenu button {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.navmenu button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  /* background-image: linear-gradient(to right, #072142, #8c2b7a 32%, #ff4d5a); */
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navmenu button:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav-scroll div {
+  width: 4px;
+  height: 4px;
+  margin: 40px;
+}
+
+.nav-active {
+  width: 2.5rem !important;
+}
+
+.nav-active div {
+  border-radius: 50%;
+}
+
+.nav-active div:nth-child(2) {
+  width: 40px;
+  height: 3px;
+}
+.nav-active div:nth-child(3) {
+  height: 40px;
+  width: 3px;
+}
+.nav-active div:nth-child(4),
+.nav-active div:nth-child(5) {
+  height: 3px;
+  width: 25px;
+}
+
+/* social media menu icons  */
+
+.socmedia-icon {
+  transition: 300ms;
+}
+.socmedia-icon:hover {
+  filter: drop-shadow(0px 2px 10px rgb(242, 140, 40)) invert(56%) sepia(68%)
+    saturate(955%) hue-rotate(345deg) brightness(103%) contrast(90%);
+}
+
+.cloud-circle {
+  width: 500px;
+  height: 275px;
+  border-radius: 50%;
+  filter: blur(50px) url(#filter);
+  box-shadow: 400px 300px 210px 0px #0a1d25, 400px 300px 160px 0px #354950,
+    400px 300px 130px 0px rgba(10, 28, 36, 0.511), 400px 300px 120px 0px #8b9a9e;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.nav-lightning::before {
+  content: '';
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  animation: sky 12s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.navbar-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes sky {
+  0% {
+    opacity: 0.2;
+  }
+  5% {
+    opacity: 0.8;
+  }
+  7% {
+    opacity: 0.6;
+  }
+  8.5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  33% {
+    opacity: 0.2;
+  }
+  35% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  52% {
+    opacity: 0.6;
+  }
+  53.5% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0.6;
+  }
+  57% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 0.6;
+  }
+  64% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  83% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cloud-1 {
+  top: -38%;
+  left: -6%;
+  transform: rotate(45deg);
+  width: 40%;
+  height: 45%;
+}
+.cloud-2 {
+  top: 20%;
+  left: -25%;
+  transform: rotate(322deg);
+  width: 55%;
+  height: 60%;
+}
+.cloud-3 {
+  top: -50%;
+  left: 24%;
+  height: 46%;
+  width: 60%;
+}
+.cloud-4 {
+  top: 15%;
+  left: 10%;
+  height: 51%;
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .nav-lightning::before {
+    animation: none;
+  }
+}

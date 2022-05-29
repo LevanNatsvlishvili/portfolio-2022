@@ -1,0 +1,200 @@
+.left_wing {
+  transform-origin: 43% 0%;
+}
+
+.right_wing {
+  transform-origin: 55% 5%;
+}
+
+.left_wing,
+.right_wing {
+  transform-box: fill-box;
+}
+
+.eye_left,
+.eye_right,
+.white,
+.eyes_wrapper {
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+.owl {
+  animation: wobble 8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 96%;
+}
+
+.owl:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.owl_iris_left,
+.owl_iris_right {
+  animation: eyeMovementAnimation 30s ease-in-out infinite;
+}
+
+.eyes_wrapper {
+  animation: wakeUp 4s ease-in-out infinite;
+  animation-delay: 5.3333333333s;
+}
+
+.owl-root {
+  transform: translate(0, 0);
+}
+
+.flying-active .left_wing {
+  animation: shake-left-wing 0.5s infinite;
+}
+.flying-active .right_wing {
+  animation: shake-right-wing 0.5s infinite;
+}
+.flying-active {
+  animation: flyAwayOwl1 10s;
+  transform-box: fill-box;
+  transform-origin: center center;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3333333333s;
+}
+.eye_right,
+.eye_left {
+  transform: rotateX(90deg);
+}
+.activePage .eye_right,
+.activePage .eye_left {
+  animation: wakeUp 7s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes flyAwayOwl1 {
+  20% {
+    transform: translate(0, -50px);
+  }
+
+  100% {
+    transform: translate(1000px, -500px);
+  }
+}
+
+@keyframes shake-left-wing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shake-right-wing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-100deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes blink {
+  0% {
+    transform: rotateX(0deg);
+  }
+  5% {
+    transform: rotateX(90deg);
+  }
+  10% {
+    transform: rotateX(0deg);
+  }
+  95% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes wakeUp {
+  0% {
+    transform: rotateX(90deg);
+  }
+  5% {
+    transform: rotateX(0deg);
+  }
+  95% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes eyeMovementAnimation {
+  2% {
+    transform: translateX(0px);
+  }
+  4.3% {
+    transform: translateX(-2px);
+  }
+  6.63% {
+    transform: translateX(5px);
+  }
+  8.9% {
+    transform: translateY(4px);
+  }
+  11.23% {
+    transform: translateX(-4px);
+  }
+  13.90% {
+    transform: translateX(0px);
+  }
+  24% {
+    transform: translateX(0px);
+  }
+  27.3% {
+    transform: translate(-2px, 5px);
+  }
+  30.93% {
+    transform: translateX(5px);
+  }
+  32.4% {
+    transform: translate(-4px);
+  }
+  35% {
+    transform: translateX(0px);
+  }
+  66.3% {
+    transform: translate(0, 5px);
+  }
+  67% {
+    transform: translate(0, 5px);
+  }
+  68.4% {
+    transform: translate(0, 5px);
+  }
+  73.1% {
+    transform: translate(0, -2px);
+  }
+  76.7% {
+    transform: translate(0, -2px);
+  }
+  78.5% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes wobble {
+  33% {
+    transform: rotate(3deg);
+  }
+  66% {
+    transform: rotate(-3deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .owl {
+    animation: none;
+    transform: translateX(-100px);
+  }
+}
