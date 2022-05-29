@@ -1,13 +1,14 @@
 import React from 'react';
 
 const ExperienceDetails = (props) => {
-  const { title, role, techStack, date, description } = props.company;
+  console.log(props.company);
+  const { title, role, techStack, date, description } = props?.company;
 
   return (
     <div className={` grid-cols-12 grid gap-5 mb-8 my-3`}>
       <div className="col-span-6 sm:col-span-4 styled-card text-grey-text p-4  ">
         <div className="scroll-bar overflow-y-auto overflow-x-hidden h-32">
-          <h1 className="text-lg sm:text-2xl text-grey-text text-white">
+          <h1 className="text-lg sm:text-xl text-grey-text text-white">
             {title}
           </h1>
           <h2 className="text-sm sm:text-base text-grey-text text-orange">

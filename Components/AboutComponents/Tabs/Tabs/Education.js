@@ -1,5 +1,5 @@
 import React from 'react';
-import Skill from '../../Components/Skill';
+import Skill from 'Components/AboutComponents/Skill';
 
 const skills = [
   {

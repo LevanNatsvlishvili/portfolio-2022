@@ -1,8 +1,8 @@
 import Button from 'Components/Button';
 import React from 'react';
-import AboutSummary from './AboutSummary';
-import Experience from './Experience';
-import Tabs from './Tabs';
+import AboutSummary from 'Components/AboutComponents/Summary';
+import Experience from 'Components/AboutComponents/Experience';
+import Tabs from 'Components/AboutComponents/Tabs';
 import { paths } from 'Routing/Paths';
 import useStore from 'Store/Context';
 
