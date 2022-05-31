@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import { useSiteUrl } from '@/hooks';
 
 const HeaderTagsRenderer = (props) => {
@@ -67,20 +67,20 @@ const HeaderTagsRenderer = (props) => {
   );
 };
 
-HeaderTagsRenderer.propTypes = {
-  title: PropTypes.string,
-  metaTitle: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  children: PropTypes.node,
-};
+// HeaderTagsRenderer.propTypes = {
+//   title: PropTypes.string,
+//   metaTitle: PropTypes.string,
+//   description: PropTypes.string,
+//   image: PropTypes.string,
+//   children: PropTypes.node,
+// };
 
-HeaderTagsRenderer.defaultProps = {
-  title: '',
-  metaTitle: '',
-  description: '',
-  image: '',
-  children: null,
-};
+// HeaderTagsRenderer.defaultProps = {
+//   title: '',
+//   metaTitle: '',
+//   description: '',
+//   image: '',
+//   children: null,
+// };
 
 export default HeaderTagsRenderer;
