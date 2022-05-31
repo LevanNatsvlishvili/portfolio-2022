@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ExperienceDetails = (props) => {
-  console.log(props.company);
   const { title, role, techStack, date, description } = props?.company;
 
   return (

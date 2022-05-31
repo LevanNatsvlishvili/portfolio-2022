@@ -24,7 +24,12 @@ function Slider(props) {
         className="flex transition slider-auto h-full"
       >
         {images.map((image, index) => (
-          <img className="w-full h-full " src={image.img} alt="project" />
+          <img
+            key={index}
+            className="w-full h-full "
+            src={image.img}
+            alt="project"
+          />
         ))}
       </div>
     </div>

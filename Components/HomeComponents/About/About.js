@@ -2,6 +2,7 @@ import FrontText from 'Components/Animations/FrontText';
 import Button from 'Components/Button';
 import { paths } from 'Routing/Paths';
 import useStore from 'Store/Context';
+import Image from 'next/image';
 
 function About() {
   const { currView, handleNavigationLoading } = useStore();
@@ -25,9 +26,15 @@ function About() {
           currView === 1 ? 'glass-effect-active' : ''
         } `}
       >
-        <img
+        {/* <img
           className="object-cover w-full h-full rounded-lg"
           src="images/me.jpg"
+          alt="profile"
+        /> */}
+        <Image
+          className="object-cover w-full h-full rounded-lg"
+          src="/images/me.jpg"
+          layout="fill"
           alt="profile"
         />
       </div>
