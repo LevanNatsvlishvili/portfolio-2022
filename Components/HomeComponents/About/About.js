@@ -26,17 +26,17 @@ function About() {
           currView === 1 ? 'glass-effect-active' : ''
         } `}
       >
-        {/* <img
+        <img
           className="object-cover w-full h-full rounded-lg"
           src="images/me.jpg"
           alt="profile"
-        /> */}
-        <Image
+        />
+        {/* <Image
           className="object-cover w-full h-full rounded-lg"
           src="/images/me.jpg"
           layout="fill"
           alt="profile"
-        />
+        /> */}
       </div>
     </section>
   );
