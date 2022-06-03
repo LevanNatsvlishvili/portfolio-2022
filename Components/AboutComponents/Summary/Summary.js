@@ -16,16 +16,20 @@ const Summary = () => {
       <h1 className="pt-1 text-center pb-6 text-grey-text text-xl text-orange">
         Front-end Developer
       </h1>
-      <p className="text-grey-text p-2 text-center text-base scroll-bar firago-light lg:h-80 overflow-auto">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+      <p className="text-grey-text p-2  text-base scroll-bar firago-light lg:h-80 overflow-auto">
+        I'm Front-end developer with 3 years of experience. Expert at UI,
+        Javascript and ReactJS development, with which I Have more than 2 years
+        of experience in ReactJS. Experienced in Typescript and NextJS
+        technologies. I'm very Passionate about css animations and aesthetics in
+        general.
+        <br />
+        I'm looking forward to learning improving my expertize and experience in
+        Typescript and NextJS, as well as to learn Blockchain development which
+        I believe soon will dominate the market.
+        <br />
+        <span className="text-orange">For the recruiters: </span>At the moment
+        I'm taking only part-time offers or flexible hour contracts. I'm
+        especially intersted in Blockchain offers.
       </p>
     </div>
   );

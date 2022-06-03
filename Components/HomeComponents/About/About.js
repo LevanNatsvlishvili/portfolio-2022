@@ -31,12 +31,6 @@ function About() {
           src="images/me.jpg"
           alt="profile"
         />
-        {/* <Image
-          className="object-cover w-full h-full rounded-lg"
-          src="/images/me.jpg"
-          layout="fill"
-          alt="profile"
-        /> */}
       </div>
     </section>
   );
