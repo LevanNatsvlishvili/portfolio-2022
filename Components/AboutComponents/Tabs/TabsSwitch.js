@@ -15,7 +15,7 @@ const Switch = (props) => {
 
   const LeftButton = ({ children, active, divide, ...rest }) => (
     <div
-      className={clsx('h-full cursor-pointer transition flex rounded-l-full', {
+      className={clsx('h-full cursor-pointer transition flex ', {
         [activeColor]: active,
       })}
       style={{
@@ -23,7 +23,7 @@ const Switch = (props) => {
       }}
       {...rest}
     >
-      <div className="h-full w-full flex items-center justify-center text-base text-grey-text rounded-l-full">
+      <div className="h-full w-full flex items-center justify-center text-base text-grey-text ">
         {children}
       </div>
       <div className="h-full bg-[#2c3d7a] opacity-40 w-1 blue-glow shadow-blue-glow" />
@@ -31,7 +31,7 @@ const Switch = (props) => {
   );
   const RightButton = ({ children, active, divide, ...rest }) => (
     <div
-      className={clsx('h-full cursor-pointer transition flex rounded-r-full', {
+      className={clsx('h-full cursor-pointer transition flex ', {
         [activeColor]: active,
       })}
       style={{
@@ -39,7 +39,7 @@ const Switch = (props) => {
       }}
       {...rest}
     >
-      <div className="h-full w-full flex items-center justify-center text-base text-grey-text rounded-r-full">
+      <div className="h-full w-full flex items-center justify-center text-base text-grey-text ">
         {children}
       </div>
     </div>
@@ -75,8 +75,8 @@ const Switch = (props) => {
   };
 
   return (
-    <div className="w-full h-20 flex items-center">
-      <div className="w-full h-10 styled-card flex items-center p-0 rounded-full transition">
+    <div className="w-full h-20 flex px-2 items-center">
+      <div className="w-full h-10 styled-card flex items-center p-0  transition">
         {tabs.map((tab, i) => generateButton(tab, i))}
       </div>
     </div>

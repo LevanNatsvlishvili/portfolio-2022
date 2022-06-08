@@ -8,16 +8,10 @@ import { HeaderTagsRenderer } from 'Components/HeaderTagsRenderer';
 function Home() {
   return (
     <div className="relative z-index-1">
-      <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Portfolio website" />
-        <link rel="icon" href="/portfolio.svg" />
-      </Head>
-
       <HeaderTagsRenderer
-        title="Portfolio"
-        metaTitle="Portfolio"
-        description="Web developer portfolio website"
+        title="Web Developer Portfolio Website"
+        metaTitle="Web Developer Portfolio Website"
+        description="An experienced Web developer portfolio website, proficient in Javascript reactJS and nextJS"
       />
 
       <Welcome />

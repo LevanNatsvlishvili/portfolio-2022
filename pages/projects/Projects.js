@@ -1,3 +1,4 @@
+import { HeaderTagsRenderer } from 'Components/HeaderTagsRenderer';
 import Image from 'Components/Image';
 import React from 'react';
 
@@ -112,6 +113,11 @@ const ProjectCardMobile = (props) => {
   const { title, url, thumbnail, techStack } = props.project;
   return (
     <div>
+      <HeaderTagsRenderer
+        title="Web Developer Portfolio Website Projects"
+        metaTitle="Web Developer Portfolio Website Projects"
+        description="An experienced Web Developer Portfolio website, proficient in Javascript reactJS and nextJS"
+      />
       <div className="relative glass-effect">
         <Image src={thumbnail} className="w-full h-full rounded-xl " />
       </div>
