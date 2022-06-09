@@ -4,58 +4,28 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
+    title: 'National Bank Of Georgia',
+    url: 'https://nbg.gov.ge/',
+    thumbnail: '/images/projects/bank-of-georgia.jpg',
+    techStack: ['React', 'Tailwindcss', 'Javascript'],
+  },
+  {
+    title: 'Dataninja',
+    url: 'https://mydataninja.com',
+    thumbnail: '/images/projects/dataninja.png',
+    techStack: ['React', 'Material-UI', 'Tailwindcss', 'Javascript'],
   },
   {
     title: 'Clothing Store Template',
     url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
     thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
+    techStack: ['React', 'Material-UI', 'Javascript'],
   },
   {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
-  },
-  {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
-  },
-  {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
-  },
-  {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
-  },
-  {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
-  },
-  {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
-  },
-  {
-    title: 'Clothing Store Template',
-    url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
-    thumbnail: '/images/projects/clothingstore.png',
-    techStack: ['React', 'Material-UI', 'javascript'],
+    title: 'Discover Greece',
+    url: 'https://levannatsvlishvili.github.io/discoverGreece/',
+    thumbnail: '/images/projects/tourism.png',
+    techStack: ['Html', 'Css', 'Vanilla Javascript'],
   },
 ];
 
@@ -102,7 +72,7 @@ const ProjectCard = (props) => {
           VISIT
         </a>
       </div>
-      <h1 className="text-lg text-center absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-3/4">
+      <h1 className="text-lg text-center absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-3/4 z-30">
         {title}
       </h1>
     </div>

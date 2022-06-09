@@ -69,7 +69,7 @@ const TimelineDot = ({ company, isLast, active, onClick }) => (
       } rounded-1/2 mt-1 sm:mt-0.5 `}
     />
     <p className="text-grey-text text-sm sm:text-base mt-2 firago-light">
-      [2021 - Present]
+      [{company.timelineDate}]
     </p>
   </div>
 );

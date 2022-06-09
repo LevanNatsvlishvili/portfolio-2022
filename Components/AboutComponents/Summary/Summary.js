@@ -17,15 +17,13 @@ const Summary = () => {
         Front-end Developer
       </h1>
       <p className="text-grey-text p-2  text-base scroll-bar firago-light lg:h-80 overflow-auto">
-        I'm Front-end developer with 3 years of experience. Expert at UI,
-        Javascript and ReactJS development, with which I Have more than 2 years
-        of experience in ReactJS. Experienced in Typescript and NextJS
-        technologies. I'm very Passionate about css animations and aesthetics in
-        general.
+        Passionate and Enthusiastic Software Engineer with 3 years of
+        professional experience. Procifient in ReactJS And Javascript, Expert at
+        CSS, UI-UX and user psychology, Experienced in Typescript and NextJS
+        technologies. Passionate about css animations and aesthetics in general.
         <br />
-        I'm looking forward to learning improving my expertize and experience in
-        Typescript and NextJS, as well as to learn Blockchain development which
-        I believe soon will dominate the market.
+        Currently my goals are to learn BLOCKCHAIN development and improve my
+        expertise and experience in Typescript and NextJS,
         <br />
         <span className="text-orange">For the recruiters: </span>At the moment
         I'm taking only part-time offers or flexible hour contracts. I'm

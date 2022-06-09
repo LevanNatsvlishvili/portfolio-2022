@@ -15,7 +15,7 @@ export const StoreContextProvider = ({ children }) => {
 
     setTimeout(() => {
       router.push(path);
-    }, 700);
+    }, 400);
     setTimeout(() => {
       setLoading(false);
     }, 1100);
