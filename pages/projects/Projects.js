@@ -36,17 +36,22 @@ const Projects = () => {
         <div className="px-4 pb-4">
           <h1>Projects</h1>
         </div>
-        <div className="px-4 grid-cols-12 flex sm:gap-8 gap-y-10 grid overflow-auto scroll-bar h-[90%]">
-          {projects.map((project, i) => (
-            <div key={i} className="col-span-12 lg:col-span-4 2xl:col-span-3">
-              <div className="hidden lg:block">
-                <ProjectCard project={project} />
+        <div className="px-4 scroll-bar overflow-auto h-[90%]">
+          <div className="h-auto sm:gap-8 gap-y-10 grid   grid-cols-12">
+            {projects.map((project, i) => (
+              <div
+                key={i}
+                className="col-span-12 lg:col-span-4 2xl:col-span-3 h-fit"
+              >
+                <div className="hidden lg:block">
+                  <ProjectCard project={project} />
+                </div>
+                <div className="block lg:hidden">
+                  <ProjectCardMobile project={project} />
+                </div>
               </div>
-              <div className="block lg:hidden">
-                <ProjectCardMobile project={project} />
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
