@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import FormButton from './FormButton';
+import emailjs from '@emailjs/browser';
 
 class CleanForm {
   constructor() {
@@ -33,11 +34,28 @@ function Contact(props) {
     }));
   };
 
-  const handleSubmit = () => {
-    setForm(new CleanForm());
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'service_6mklyn4',
+        'template_7icvxne',
+        formRef.current,
+        '4myjOx_MvzMjOyqz7'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
     setSubmited(true);
     setTimeout(() => {
       document.getElementById('svgowl').classList.add('flying-active');
+      setForm(new CleanForm());
     }, 2000);
   };
 
@@ -60,7 +78,7 @@ function Contact(props) {
 
   return (
     <>
-      <div
+      <form
         ref={formRef}
         className="signup-form styled-card lg:right-36 top-1/4 lg:top-auto w-[85%] lg:w-1/3 z-20 absolute flex-col flex justify-center"
       >
@@ -202,7 +220,7 @@ function Contact(props) {
         />
 
         <FormButton onClick={handleSubmit} submited={submited} />
-      </div>
+      </form>
     </>
   );
 }

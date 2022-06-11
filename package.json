@@ -10,16 +10,18 @@
     "export": "next export"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "clsx": "^1.1.1",
+    "emailjs": "^4.0.0",
     "lodash": "^4.17.21",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
-    "eslint": "8.14.0",
     "autoprefixer": "^10.4.4",
     "css-loader": "^6.7.1",
+    "eslint": "8.14.0",
     "postcss": "^8.4.12",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.24"

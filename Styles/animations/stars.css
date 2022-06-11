@@ -24,6 +24,18 @@ body {
   transform: rotate(45deg) translate(-40%, -35%);
 }
 
+@media (min-width: 1224px) {
+  .stars-1 {
+    transform: rotate(15deg) translate(-10%, -50%);
+  }
+  .stars-2 {
+    transform: rotate(30deg) translate(-15%, -35%);
+  }
+  .stars-3 {
+    transform: rotate(45deg) translate(-20%, -20%);
+  }
+}
+
 #stars {
   width: 1px;
   height: 1px;
