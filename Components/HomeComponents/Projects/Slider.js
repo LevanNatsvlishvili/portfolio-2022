@@ -1,13 +1,10 @@
-import Image from 'Components/Image';
 import React from 'react';
 
 const images = [
-  { id: 0, img: 'images/projects/clothingstore.png' },
+  { id: 0, img: 'images/projects/bank-of-georgia.jpg' },
   { id: 1, img: 'images/projects/dataninja.png' },
   { id: 2, img: 'images/projects/tourism.png' },
   { id: 3, img: 'images/projects/clothingstore.png' },
-  { id: 4, img: 'images/projects/dataninja.png' },
-  { id: 5, img: 'images/projects/tourism.png' },
 ];
 
 function Slider(props) {
