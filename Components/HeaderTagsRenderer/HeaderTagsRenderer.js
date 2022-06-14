@@ -21,13 +21,7 @@ const HeaderTagsRenderer = (props) => {
         <meta key="ogDescr" property="og:description" content={description} />
       )}
 
-      {image && (
-        <meta
-          property="og:image"
-          key="ogImage"
-          content={process.env.STATIC_RESOURCES_URL.concat(image)}
-        />
-      )}
+      {image && <meta property="og:image" key="ogImage" content={image} />}
       {/* <meta property="og:url" key="ogUrl" content={siteUrl} /> */}
       <meta property="og:site_name" key="ogSiteName" content="Site name" />
 

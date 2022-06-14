@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import About from 'Components/HomeComponents/About';
 import Contact from 'Components/HomeComponents/Contact';
 import Projects from 'Components/HomeComponents/Projects';
@@ -12,6 +11,7 @@ function Home() {
         title="Web Developer Portfolio Website"
         metaTitle="Web Developer Portfolio Website"
         description="An experienced Web developer portfolio website, proficient in Javascript reactJS and nextJS"
+        image="/images/projects/portfolio.png"
       />
 
       <Welcome />

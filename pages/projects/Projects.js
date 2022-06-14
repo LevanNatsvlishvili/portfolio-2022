@@ -32,6 +32,12 @@ const projects = [
 const Projects = () => {
   return (
     <div className="relative pt-20 sm:pt-32 px-4 sm:px-10 z-10 h-[90vh] w-screen ">
+      <HeaderTagsRenderer
+        title="Web Developer Portfolio Website Projects"
+        metaTitle="Web Developer Portfolio Website"
+        description="An experienced Web Developer Portfolio website, proficient in Javascript reactJS and nextJS"
+        image="/images/projects/portfolio.png"
+      />
       <div className="styled-card h-full px-1 sm:px-4">
         <div className="px-4 pb-4">
           <h1>Projects</h1>

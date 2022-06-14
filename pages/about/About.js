@@ -15,6 +15,7 @@ const About = () => {
         title="Web Developer Portfolio Website About"
         metaTitle="Web Developer Portfolio Website"
         description="An experienced Web Developer Portfolio website, proficient in Javascript reactJS and nextJS"
+        image="/images/projects/portfolio.png"
       />
       <div className="relative pt-20 sm:pt-32 px-4 md:px-10 z-10 flex grid-cols-12 gap-y-8 gap-x-2 gap-2 md:gap-8 grid">
         <div className="col-span-12 lg:col-span-4 2xl:col-span-3">
