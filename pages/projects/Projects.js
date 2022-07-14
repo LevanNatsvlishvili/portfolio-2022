@@ -4,6 +4,12 @@ import React from 'react';
 
 const projects = [
   {
+    title: 'Archi',
+    url: 'https://archi.ge',
+    thumbnail: '/images/projects/no-image.jpg',
+    techStack: ['React', 'Bootstrap', 'Javascript'],
+  },
+  {
     title: 'National Bank Of Georgia',
     url: 'https://nbg.gov.ge/',
     thumbnail: '/images/projects/bank-of-georgia.jpg',
