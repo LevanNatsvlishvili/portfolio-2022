@@ -29,7 +29,7 @@ const companies = [
     timelineDate: '2020 - 2021',
     techStack: ['React', 'Javascript', 'Tailwind-css', 'Material-ui'],
     description:
-      'A Sillicon valley startup, for which I worked, where I built a responsive User interface and was in constant challenge to turn a heavy application into a robust one',
+      'In helix nebula captial, I have worked on two projects. 1) A Sillicon valley startup "Dataninja", where I built a responsive User interface and was in constant challenge to turn a heavy application into a robust one. 2) Citrus.ge , an ecommerce application.',
   },
   {
     id: 2,

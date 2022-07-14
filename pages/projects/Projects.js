@@ -16,6 +16,12 @@ const projects = [
     techStack: ['React', 'Material-UI', 'Tailwindcss', 'Javascript'],
   },
   {
+    title: 'Citrus',
+    url: 'https://www.citrus.ge/',
+    thumbnail: '/images/projects/citrus.png',
+    techStack: ['React', 'Javascript'],
+  },
+  {
     title: 'Clothing Store Template',
     url: 'https://levannatsvlishvili.github.io/clothingstoretemplate/',
     thumbnail: '/images/projects/clothingstore.png',
