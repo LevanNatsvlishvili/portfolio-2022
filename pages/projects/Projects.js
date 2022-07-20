@@ -80,9 +80,9 @@ const ProjectCard = (props) => {
   const { title, url, thumbnail, techStack } = props.project;
   return (
     <div className="project-card relative glass-effect">
-      <Image src={thumbnail} className="w-full h-full rounded-xl " />
+      <Image src={thumbnail} className="w-full h-60 rounded-xl " />
       <div className="opacity-0 z-10 transition duration-300 w-full h-full absolute top-0 rounded-xl bg-[#181D5E]/30 blur" />
-      <div className="opacity-0 z-20 mt-6 flex transition duration-300 w-full h-full absolute top-0 rounded-xl  items-center justify-center flex-col">
+      <div className="opacity-0 z-20 flex transition duration-300 w-full h-full absolute top-0 rounded-xl  items-center justify-center flex-col">
         <h3 className="text-sm text-orange w-1/2 text-center">
           {techStack.join(', ')}
         </h3>
