@@ -82,10 +82,7 @@ const ProjectCard = (props) => {
     <div className="project-card relative glass-effect">
       <Image src={thumbnail} className="w-full h-60 rounded-xl " />
       <div className="opacity-0 z-10 transition duration-300 w-full h-full absolute top-0 rounded-xl bg-[#181D5E]/30 blur" />
-      <div className="opacity-0 z-20 flex transition duration-300 w-full h-full absolute top-0 rounded-xl  items-center justify-center flex-col">
-        <h3 className="text-sm text-orange w-1/2 text-center">
-          {techStack.join(', ')}
-        </h3>
+      <div className="opacity-0 z-30 flex transition duration-300 w-full h-full absolute top-0 rounded-xl items-center justify-center flex-col mt-10">
         <a
           className="text-grey-text border-blue-glow border-2 text-xs w-28 h-7 flex items-center justify-center bg-[#0D162860] rounded-3xl mt-5"
           href={url}
@@ -95,9 +92,12 @@ const ProjectCard = (props) => {
           VISIT
         </a>
       </div>
-      <h1 className="text-lg text-center absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-3/4 z-30">
-        {title}
-      </h1>
+      <div className="z-20 flex transition duration-300 w-full h-full absolute top-0 rounded-xl  items-center justify-center flex-col">
+        <h1 className="text-lg text-center ">{title}</h1>
+        <h3 className="text-sm text-orange w-1/2 text-center">
+          {techStack.join(', ')}
+        </h3>
+      </div>
     </div>
   );
 };
